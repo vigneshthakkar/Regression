@@ -2,7 +2,7 @@ from linear import linearregression
 from weightedlinear import weightedlinearregression
 from logistic import logisicregression
 
-char=='y'
+char='y'
 while char=='y':
 	print('Chose from one of the following : ')
 	print('1. Linear Regression')
