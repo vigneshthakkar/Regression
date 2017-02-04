@@ -1,6 +1,6 @@
 from linear import linearregression
 from weightedlinear import weightedlinearregression
-from logistic import logisicregression
+from logistic import logisticregression
 
 char='y'
 while char=='y':
