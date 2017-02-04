@@ -16,7 +16,7 @@ def weightedlinearregression():
 	while ch=='y':
 		print('Enter the test vector : ')
 		a=[[float(number) for number in input().split()]]
-		weights=calculateweights()
+		weights=calculateweights(x,a)
 		lr=linear_model.LinearRegression()
 		lr.fit(x,y,sample_weights=weights)
 		y=lr.predict(a)
