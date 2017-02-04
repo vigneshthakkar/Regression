@@ -11,7 +11,7 @@ def logisticregression():
 		print('For point '+str(i+1)+' enter the output integer class : ')
 		a=[int(number) for number in input().split()]
 		y.append(a)
-	lr=linear_model.LogisticRegression(solver='sag')
+	lr=linear_model.LogisticRegression(solver='netwon-cg', multi_class='multinomial')
 	lr.fit(x,y)
 	ch='y'
 	while ch=='y':
