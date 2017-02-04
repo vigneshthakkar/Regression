@@ -5,10 +5,10 @@ def logisticregression():
 	points=int(input())
 	x,y=[],[]
 	for i in range(points):
-		print('For point '+(i+1)+' enter the feature vector : ')
+		print('For point '+str(i+1)+' enter the feature vector : ')
 		a=[float(number) for number in input().split()]
 		x.append(a)
-		print('For point '+(i+1)+' enter the output integer class : ')
+		print('For point '+str(i+1)+' enter the output integer class : ')
 		a=[int(number) for number in input().split()]
 		y.append(a)
 	lr=linear_model.LogisticRegression(solver='sag')
